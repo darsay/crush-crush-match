@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"98175e6f-e8cf-428c-8446-a911d0d0a4de\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialTokens\",\r\n      \"type\":
+    \"int\",\r\n      \"value\": 125\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
+    {\r\n      \"entityId\": \"cd03e123-d1d7-4ca2-9736-124df305eb4a\"\r\n    },\r\n   
+    \"rs\": {\r\n      \"key\": \"TokensPerWin\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 150\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"dbe8f352-ce31-4d25-b7a6-c2cc8d050d9a\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"TokensToRetry\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"abd638c3-880f-46cf-a79b-7d13bd3998b6\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerIcons\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"defaultIcons\": [\r\n         
+    0,\r\n          1\r\n        ]\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
+    {\r\n      \"entityId\": \"1d634f09-526f-4183-aa21-77169bd6524b\"\r\n    },\r\n   
+    \"rs\": {\r\n      \"key\": \"DefaultPlayerIcon\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"e7a1bc5e-9e5d-4856-81b1-25f893ef2005\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"DefaultCrushIcon\",\r\n      \"type\": \"int\",\r\n      \"value\":
+    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"648d2340-8103-4a3e-a736-33d7b06b65b4\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialShuffle\",\r\n      \"type\":
+    \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"1237d012-d957-41dd-a738-032f40993679\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"PlayerInitialCellEraser\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"a939683c-22ef-452b-8fda-9a3f6a43f19b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"PlayerInitialRowEraser\",\r\n      \"type\": \"int\",\r\n      \"value\":
+    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8c5d3aa3-10f1-448a-8b5c-fb80fdcb5b1a\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialColumnEraser\",\r\n     
+    \"type\": \"int\",\r\n      \"value\": 5\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"98175e6f-e8cf-428c-8446-a911d0d0a4de\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialTokens\",\r\n      \"type\":
+    \"int\",\r\n      \"value\": 125\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
+    {\r\n      \"entityId\": \"cd03e123-d1d7-4ca2-9736-124df305eb4a\"\r\n    },\r\n   
+    \"rs\": {\r\n      \"key\": \"TokensPerWin\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 150\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"dbe8f352-ce31-4d25-b7a6-c2cc8d050d9a\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"TokensToRetry\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"abd638c3-880f-46cf-a79b-7d13bd3998b6\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerIcons\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"defaultIcons\": [\r\n         
+    0,\r\n          1\r\n        ]\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
+    {\r\n      \"entityId\": \"1d634f09-526f-4183-aa21-77169bd6524b\"\r\n    },\r\n   
+    \"rs\": {\r\n      \"key\": \"DefaultPlayerIcon\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"e7a1bc5e-9e5d-4856-81b1-25f893ef2005\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"DefaultCrushIcon\",\r\n      \"type\": \"int\",\r\n      \"value\":
+    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"648d2340-8103-4a3e-a736-33d7b06b65b4\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialShuffle\",\r\n      \"type\":
+    \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"1237d012-d957-41dd-a738-032f40993679\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"PlayerInitialCellEraser\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"a939683c-22ef-452b-8fda-9a3f6a43f19b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"PlayerInitialRowEraser\",\r\n      \"type\": \"int\",\r\n      \"value\":
+    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8c5d3aa3-10f1-448a-8b5c-fb80fdcb5b1a\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialColumnEraser\",\r\n     
+    \"type\": \"int\",\r\n      \"value\": 5\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"17133241-8ce0-4f16-8ef2-840437fc4d1f\",\r\n   
+    \"name\": \"development\",\r\n    \"id\": \"182fe892-920c-4168-b664-e3f070aaa8f1\",\r\n   
+    \"isDefault\": false,\r\n    \"createdAt\": \"2022-09-07T17:52:10Z\",\r\n   
+    \"updatedAt\": \"2022-09-07T17:52:10Z\"\r\n  },\r\n  {\r\n    \"projectId\":
+    \"17133241-8ce0-4f16-8ef2-840437fc4d1f\",\r\n    \"name\": \"production\",\r\n   
+    \"id\": \"a75b7b2f-3287-4c7d-a9c1-d4ee123f8450\",\r\n    \"isDefault\": true,\r\n   
+    \"createdAt\": \"2022-09-07T17:30:29Z\",\r\n    \"updatedAt\": \"2022-09-07T17:30:29Z\"\r\n 
+    }\r\n]"

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Tiles
+  m_EditorClassIdentifier: 
+  m_GroupName: Tiles
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9677e3afdd1541a4bab49e68bf711810
+  m_SerializeEntries:
+  - m_GUID: 606a0fb74aab6bd45a66deff6bebae73
+    m_Address: heart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3492e6df2ad6d2945870b28eb325da16
+    m_Address: puke
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d5766029901010479bbd0bd2ef36932
+    m_Address: demon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d827caa6877de9449a5af01f106f3ee
+    m_Address: heart_baloon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 28249fe7a73c92d4bafe369d04eb61f0
+    m_Address: angry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4ae686fb85523d46bbd30c85bb75e57
+    m_Address: sad
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f87b4e879ad8b64c888628e0cbc8acf
+    m_Address: rocket
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2858df0942817224093a2aed0a057fab
+    m_Address: bomb
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 664210457b814ff4a90b970002450049
+    m_Address: happy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7160c23a8ae9dcb4ab489db3ef3aeae7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2e22215e78f98904794f942e9d8c84cb, type: 2}
+    - {fileID: 11400000, guid: f32056953d9e9a047a366c686dd23550, type: 2}
