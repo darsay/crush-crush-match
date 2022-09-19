@@ -1,13 +1,56 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "22f8fb7a",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "22f8fb7a",
+        "name": "com.DarsayGames.CrushCrushMatch",
+        "processId": 4900,
         "exited": false
     },
-    "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_SelectedPriority": 4,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 24279,
+            "exited": true
+        },
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 17041,
+            "exited": true
+        },
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 32389,
+            "exited": true
+        },
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 24676,
+            "exited": true
+        },
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 4900,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.132:5555",
+            "name": "com.android.settings",
+            "processId": 31468,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.132:5555",
+            "name": "com.DarsayGames.CrushCrushMatch",
+            "processId": 3544,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +84,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

@@ -18,17 +18,7 @@ public class WinScreen : MonoBehaviour
         _reward = ServiceLocator.GetService<RemoteConfigGameService>().GetInt("TokensPerWin");
     }
 
-    private void OnEnable()
-    {
-        BoardEventManager.OnWin += OnWin;
-    }
-
-    private void OnDisable()
-    {
-        BoardEventManager.OnWin -= OnWin;
-    }
-
-    void OnWin()
+    public void OnWin()
     {
         var data = ServiceLocator.GetService<GameProgressionService>().GameData;
 

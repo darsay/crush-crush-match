@@ -15,16 +15,8 @@ MonoBehaviour:
   m_GroupName: Icons
   m_Data:
     m_SerializedData: []
-  m_GUID: 373350a8114d15c468ac83ba2b2093c8
+  m_GUID: 1d7a0ac3fb8f8ea41a0951c79899e510
   m_SerializeEntries:
-  - m_GUID: 0cf2a463b9019bc41b937aabef0faccd
-    m_Address: icon00
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 7d4dcc69b37bd0b40a01304681eef5fe
-    m_Address: icon01
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: f07dede8e63f20c4695f2ca1689e810c
     m_Address: icon02
     m_ReadOnly: 0
@@ -65,9 +57,17 @@ MonoBehaviour:
     m_Address: icon08
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 0cf2a463b9019bc41b937aabef0faccd
+    m_Address: icon00
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d4dcc69b37bd0b40a01304681eef5fe
+    m_Address: icon01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7160c23a8ae9dcb4ab489db3ef3aeae7, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: e6634e86dfb6cd7448ac397a3be91f15, type: 2}
-    - {fileID: 11400000, guid: 7be2d06b487bc774f82e1ff24eb1bcc2, type: 2}
+    - {fileID: 11400000, guid: 2e4e072b1dc03fb4db9fc28af1767159, type: 2}
+    - {fileID: 11400000, guid: 9dd289ce26303f64f94261fc505c495a, type: 2}

@@ -33,6 +33,8 @@ public class BoardEventManager
 
     public static event Action OnMoveDone = delegate () { };
 
+    public static event Action<int> OnContinue = delegate (int moves) { };
+
 
 
     public static void NotifyOnLevelLoaded(Level level) => OnLevelLoaded(level);
@@ -69,5 +71,7 @@ public class BoardEventManager
     public static void NotifyOnActiveBoosterUsed(ActiveBooster booster) => OnActiveBoosterUsed(booster);
 
     public static void NotifyOnMoveDone() => OnMoveDone();
+
+    public static void NotifyOnContinue(int moves) => OnContinue(moves);
 
 }

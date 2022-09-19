@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class AnimationSceneLoader : MonoBehaviour
 {
-    [SerializeField]
-    int sceneToLoad;
+    public int SceneToLoad;
+
+    public bool IsAnimationFinished;
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        IsAnimationFinished = true;
     }
 }

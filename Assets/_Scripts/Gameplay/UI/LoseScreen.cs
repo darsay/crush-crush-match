@@ -10,7 +10,6 @@ public class LoseScreen : MonoBehaviour
 
     [SerializeField] CanvasGroup tryAgainPopCG;
     [SerializeField] CanvasGroup gameOverCG;
-    [SerializeField] RemainingMoves remainingMoves;
     [SerializeField] TextMeshProUGUI retryText;
 
     int _priceToContinue;
@@ -22,17 +21,8 @@ public class LoseScreen : MonoBehaviour
         retryText.text = $"+5 moves for {_priceToContinue} tokens";
     }
 
-    private void OnEnable()
-    {
-        BoardEventManager.OnDefeat += OnDefeat;
-    }
 
-    private void OnDisable()
-    {
-        BoardEventManager.OnDefeat -= OnDefeat;
-    }
-
-    void OnDefeat()
+    public void OnDefeat()
     {
         BoardEventManager.NotifyOnInputLocked(true);
         canvasGroup.DOFade(1, 0.5f);
@@ -52,14 +42,27 @@ public class LoseScreen : MonoBehaviour
         if (currentCoins < _priceToContinue) return;
 
         BoardEventManager.NotifyOnInputLocked(false);
+
+        BoardEventManager.NotifyOnContinue(5);
+        GameDataEventManager.NotifyOnCoinsChange(currentCoins - _priceToContinue);
+        ServiceLocator.GetService<GameProgressionService>().SaveGameData();
+
         canvasGroup.DOFade(0, 0.5f);
         canvasGroup.blocksRaycasts = false;
         tryAgainPopCG.blocksRaycasts = false;
+    }
 
+    public void ContinueAfterAd()
+    {
 
-        remainingMoves.SetMoves(5);
-        GameDataEventManager.NotifyOnCoinsChange(currentCoins - _priceToContinue);
+        BoardEventManager.NotifyOnInputLocked(false);
+
+        BoardEventManager.NotifyOnContinue(5);
         ServiceLocator.GetService<GameProgressionService>().SaveGameData();
+
+        canvasGroup.DOFade(0, 0.5f);
+        canvasGroup.blocksRaycasts = false;
+        tryAgainPopCG.blocksRaycasts = false;
     }
 
     public void GameOver()

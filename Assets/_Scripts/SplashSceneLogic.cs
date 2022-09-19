@@ -9,18 +9,34 @@ public class SplashSceneLogic : MonoBehaviour
     [SerializeField]
     private bool IsDevBuild = true;
 
+    [SerializeField]
+    AnimationSceneLoader animationSceneLoader;
+
+
+    private TaskCompletionSource<bool> _cancellationTaskSource;
 
     void Start()
     {
-        LoadServices().ContinueWith(task =>
+        _cancellationTaskSource = new();
+        LoadServicesCancellable().ContinueWith(task =>
                 Debug.LogException(task.Exception),
             TaskContinuationOptions.OnlyOnFaulted);
+    }
 
+    private void OnDestroy()
+    {
+        _cancellationTaskSource.SetResult(true);
+    }
 
+    private async Task LoadServicesCancellable()
+    {
+        await Task.WhenAny(LoadServices(), _cancellationTaskSource.Task);
     }
 
     private async Task LoadServices()
     {
+        Application.targetFrameRate = 60;
+
         string environmentId = IsDevBuild ? "development" : "production";
 
         ServicesInitializer servicesInitializer = new ServicesInitializer(environmentId);
@@ -42,6 +58,7 @@ public class SplashSceneLogic : MonoBehaviour
         ServiceLocator.RegisterService(remoteConfig);
         ServiceLocator.RegisterService(analyticsService);
         ServiceLocator.RegisterService(iconLoaderService);
+        ServiceLocator.RegisterService(adsService);
         ServiceLocator.RegisterService(levelsService);
 
         //initialize services
@@ -55,6 +72,13 @@ public class SplashSceneLogic : MonoBehaviour
         gameConfig.Initialize(remoteConfig);
         gameProgression.LoadGameData(gameConfig);
         levelsService.Initialize();
+
+        while (!animationSceneLoader.IsAnimationFinished)
+        {
+            await Task.Delay(500);
+        }
+
+        SceneManager.LoadScene(animationSceneLoader.SceneToLoad);
     }
 
 }

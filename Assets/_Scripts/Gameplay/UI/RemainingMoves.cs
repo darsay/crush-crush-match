@@ -15,12 +15,15 @@ public class RemainingMoves : MonoBehaviour
         BoardEventManager.OnLevelLoaded += InitMoves;
         BoardEventManager.OnMoveDone += UpdateMoves;
         BoardEventManager.OnWin += OnWin;
+        BoardEventManager.OnContinue += SetMoves;
     }
 
     private void OnDisable()
     {
+        BoardEventManager.OnLevelLoaded -= InitMoves;
         BoardEventManager.OnMoveDone -= UpdateMoves;
         BoardEventManager.OnWin -= OnWin;
+        BoardEventManager.OnContinue -= SetMoves;
     }
     
 

@@ -16,6 +16,8 @@ public class GameProgressionService : IService
         {
             string json = File.ReadAllText(path);
             GameData = JsonUtility.FromJson<GameData>(json);
+            JsonUtility.FromJsonOverwrite(System.IO.File.ReadAllText(Application.persistentDataPath + "/savefile.json"),
+                    this);
         }
         else
         {
@@ -53,7 +55,7 @@ public class GameProgressionService : IService
     {
         string json = JsonUtility.ToJson(GameData);
 
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/savefile.json", JsonUtility.ToJson(this));
     }
 
     public void Clear()

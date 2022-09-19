@@ -576,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDevBuild: 1
+  animationSceneLoader: {fileID: 2051219161}
 --- !u!4 &1338249966
 Transform:
   m_ObjectHideFlags: 0
@@ -626,7 +627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07388888, y: 0.30341882}
   m_AnchorMax: {x: 0.9147038, y: 0.6914188}
-  m_AnchoredPosition: {x: 0, y: 1548}
+  m_AnchoredPosition: {x: 0, y: 1980}
   m_SizeDelta: {x: -611.3611, y: -613.6891}
   m_Pivot: {x: 0.5, y: 0.49999988}
 --- !u!114 &1637206774
@@ -805,4 +806,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5876bff5d9ecc4eaeea7e589929fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 1
+  SceneToLoad: 1
+  IsAnimationFinished: 0

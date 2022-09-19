@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d17a21594effb4e9591490b009e7aa, type: 3}
   m_Name: Tiles_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 326a64c26b354cd408f25d248115ab6f, type: 2}
+  m_Group: {fileID: 11400000, guid: e73e65c4202673d46a923b34eb321afb, type: 2}
   m_InternalBundleIdMode: 1
   m_Compression: 1
   m_IncludeAddressInCatalog: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
     m_Id: 589249ab9d6ee5447842103f9c08fa43
   m_LoadPath:
     m_Id: 942c2df793ac6e44a89a0c0e57e75b36
-  m_BundleMode: 1
+  m_BundleMode: 0
   m_AssetBundleProviderType:
     m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider

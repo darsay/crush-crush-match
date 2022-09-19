@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
   m_Name: Tiles_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 326a64c26b354cd408f25d248115ab6f, type: 2}
+  m_Group: {fileID: 11400000, guid: e73e65c4202673d46a923b34eb321afb, type: 2}
   m_StaticContent: 0

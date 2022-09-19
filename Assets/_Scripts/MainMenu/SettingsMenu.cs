@@ -13,9 +13,29 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] AudioMixer audioMixer;
     CanvasGroup _canvasGroup;
 
+    string _musicSliderName = "MusicVolume";
+    string _sfxSliderName = "SFXVolume";
+
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey(_musicSliderName))
+        {
+            musicSlider.value = PlayerPrefs.GetFloat(_musicSliderName);
+            sfxSlider.value = PlayerPrefs.GetFloat(_sfxSliderName);
+            PlayerPrefs.SetFloat(_musicSliderName, musicSlider.value);
+            PlayerPrefs.SetFloat(_sfxSliderName, sfxSlider.value);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(_musicSliderName, 1);
+            PlayerPrefs.SetFloat(_sfxSliderName, 1);
+        }
+        
     }
 
     public void OpenSettings()
@@ -38,13 +58,13 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetMusicVolume()
     {
-
-
-        audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicSlider.value) * 20);
+        audioMixer.SetFloat(_musicSliderName, Mathf.Log10(musicSlider.value) * 20);
+        PlayerPrefs.SetFloat(_musicSliderName, musicSlider.value);
     }
 
     public void SetSFXVolume()
     {
-        audioMixer.SetFloat("SFXVolume", Mathf.Log10(sfxSlider.value) * 20);
+        audioMixer.SetFloat(_sfxSliderName, Mathf.Log10(sfxSlider.value) * 20);
+        PlayerPrefs.SetFloat(_sfxSliderName, sfxSlider.value);
     }
 }

@@ -7,23 +7,17 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class LevelsGameService : IService
 {
-    public int LevelsCount;
+    public int LevelsCount = 3;
 
     public Level LevelToPlay;
 
     string _levelBaseName = "Level";
-
-    string _path = Application.dataPath + "/Levels";
 
 
     private AsyncOperationHandle _currentHandle;
 
     public void Initialize()
     {
-        DirectoryInfo directory = new DirectoryInfo(_path);
-
-        LevelsCount  = directory.GetFiles().Length/2;
-
         GameDataEventManager.OnLevelToPlayChange += SetLevel;
     }
 
