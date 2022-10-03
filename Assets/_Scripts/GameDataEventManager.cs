@@ -21,6 +21,8 @@ public static class GameDataEventManager
     public static event Action<int> OnSkinAdded = delegate (int icon) { };
     public static event Action<int> OnBuyMade = delegate (int id) { };
 
+    public static event Action<bool> OnAplicationPaused = delegate (bool isPause) { };
+
     public static void NotifyOnLevelUnlockedIdChange(int amount) => OnLevelUnlockedIdChange(amount);
     public static void NotifyOnLevelToPlayChange(int amount) => OnLevelToPlayChange(amount);
     public static void NotifyOnLifesChange(int amount) => OnLifesChange(amount);
@@ -36,5 +38,7 @@ public static class GameDataEventManager
 
     public static void NotifyOnSkinAdded(int icon) => OnSkinAdded(icon);
     public static void NotifyOnBuyMade(int id) => OnBuyMade(id);
+
+    public static void NotifyOnAplicationPaused(bool isPaused) => OnAplicationPaused(isPaused);
     
 }

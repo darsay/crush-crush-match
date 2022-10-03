@@ -4,8 +4,6 @@ public class CurrentLevelLoaderButton : LevelLoaderButton
 {
     protected override void Start()
     {
-
-
         LevelToLoad = ServiceLocator.GetService<GameProgressionService>().GameData.LevelUnlocked;
 
 

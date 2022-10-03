@@ -1,28 +1,61 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
-
 
 [System.Serializable]
 public class GameProgressionService : IService
 {
     public GameData GameData;
 
-    private static string path = Application.persistentDataPath + "/savefile.json";
 
-    public void LoadGameData(GameConfigService config)
+    private IGameProgressionProvider _progressionProvider;
+
+    CloudGameProgressionProvider _cloudProvider;
+    FileGameProgressionProvider _fileProvider;
+
+    bool _isCloud;
+
+
+    public async Task Initialize(GameConfigService gameConfig, int isCloud)
     {
-        if (File.Exists(path))
+        _cloudProvider = new CloudGameProgressionProvider();
+        _fileProvider = new FileGameProgressionProvider();
+
+        await _cloudProvider.Initialize();
+
+        await _fileProvider.Initialize();
+
+        if (isCloud != 0)
         {
-            string json = File.ReadAllText(path);
-            GameData = JsonUtility.FromJson<GameData>(json);
-            JsonUtility.FromJsonOverwrite(System.IO.File.ReadAllText(Application.persistentDataPath + "/savefile.json"),
-                    this);
+            _isCloud = true;
+
+            _progressionProvider = _cloudProvider;
         }
         else
         {
+            _isCloud = false;
+
+            _progressionProvider = _fileProvider;
+        }
+
+        LoadGameData(gameConfig);
+
+        GameDataEventManager.OnAplicationPaused += SaveWhenPaused;
+    }
+
+    public void LoadGameData(GameConfigService config)
+    {
+        string data = _progressionProvider.Load();
+
+        if (string.IsNullOrEmpty(data))
+        {
             CreateNewGameData(config);
             SaveGameData();
+        }
+        else
+        {
+            GameData = JsonUtility.FromJson<GameData>(data);
         }
 
         GameData.SetStatsToListen();
@@ -41,7 +74,7 @@ public class GameProgressionService : IService
         GameData.PlayerIcon = config.InitialPlayerIcon;
         GameData.CrushIcon = config.InitialCrushIcon;
 
-        GameData.shopItems = new List<bool>() { true, true, true, true, true };
+        GameData.ShopItems = new List<bool>() { true, true, true, true, true };
         GameData.IconsList = config.InitialSkins;
 
     }
@@ -53,13 +86,38 @@ public class GameProgressionService : IService
 
     public void SaveGameData()
     {
-        string json = JsonUtility.ToJson(GameData);
+        if (_isCloud)
+        {
+            _cloudProvider.Save(JsonUtility.ToJson(GameData));
 
-        System.IO.File.WriteAllText(Application.persistentDataPath + "/savefile.json", JsonUtility.ToJson(this));
+        }
+
+        _fileProvider.Save(JsonUtility.ToJson(GameData));
     }
 
     public void Clear()
     {
 
+    }
+
+    void SaveWhenPaused(bool isPaused)
+    {
+        if (isPaused) SaveGameData();
+    }
+
+    public void ChangeProvider(bool isCloud)
+    {
+        if (isCloud)
+        {
+            _isCloud = true;
+
+            _progressionProvider = _cloudProvider;
+        }
+        else
+        {
+            _isCloud = false;
+
+            _progressionProvider = _fileProvider;
+        }
     }
 }

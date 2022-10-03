@@ -3,39 +3,45 @@
     "m_SelectedPackage": {
         "deviceId": "22f8fb7a",
         "name": "com.DarsayGames.CrushCrushMatch",
-        "processId": 4900,
+        "processId": 23463,
         "exited": false
     },
-    "m_SelectedPriority": 4,
+    "m_SelectedPriority": 1,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "22f8fb7a",
+            "name": "com.miui.home",
+            "processId": 3069,
+            "exited": false
+        },
+        {
+            "deviceId": "22f8fb7a",
             "name": "com.DarsayGames.CrushCrushMatch",
-            "processId": 24279,
+            "processId": 18692,
+            "exited": true
+        },
+        {
+            "deviceId": "22f8fb7a",
+            "name": "com.miui.global.packageinstaller",
+            "processId": 8405,
             "exited": true
         },
         {
             "deviceId": "22f8fb7a",
             "name": "com.DarsayGames.CrushCrushMatch",
-            "processId": 17041,
+            "processId": 9727,
             "exited": true
         },
         {
             "deviceId": "22f8fb7a",
             "name": "com.DarsayGames.CrushCrushMatch",
-            "processId": 32389,
+            "processId": 11663,
             "exited": true
         },
         {
             "deviceId": "22f8fb7a",
             "name": "com.DarsayGames.CrushCrushMatch",
-            "processId": 24676,
-            "exited": true
-        },
-        {
-            "deviceId": "22f8fb7a",
-            "name": "com.DarsayGames.CrushCrushMatch",
-            "processId": 4900,
+            "processId": 23463,
             "exited": false
         },
         {
@@ -59,7 +65,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -75,7 +81,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",

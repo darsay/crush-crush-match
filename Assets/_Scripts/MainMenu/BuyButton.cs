@@ -9,14 +9,22 @@ public abstract class BuyButton : MonoBehaviour
     [SerializeField]
     protected int price;
 
-    Button _button;
+    [SerializeField]
+    protected bool isIAP;
 
-    [SerializeField] TextMeshProUGUI priceTag;
+    protected Button _button;
+
+    [SerializeField] protected TextMeshProUGUI priceTag;
+
+    protected IIAPGameService _iapService;
 
     private void Awake()
     {
         _button = GetComponent<Button>();
         priceTag.text = price.ToString();
+
+        _iapService = ServiceLocator.GetService<IIAPGameService>();
+
     }
 
     private void OnEnable()
