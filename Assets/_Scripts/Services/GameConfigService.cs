@@ -16,6 +16,8 @@ public class GameConfigService : IService
 
     public List<int> InitialSkins;
 
+    public List<StoreItemConfig> StoreConfig;
+
     public void Initialize(RemoteConfigGameService dataProvider)
     {
         InitialTokens = dataProvider.GetInt("PlayerInitialTokens", 100);
@@ -30,9 +32,11 @@ public class GameConfigService : IService
         InitialPlayerIcon = dataProvider.GetInt("DefaultPlayerIcon", 0);
         InitialCrushIcon = dataProvider.GetInt("DefaultCrushIcon", 1);
 
-        InitialSkins = dataProvider.Get<GameIconsList>("PlayerIcons")?.IconsList;
+        var iconList = dataProvider.Get<GameIconsList>("PlayerIcons");
+        InitialSkins = dataProvider.Get<GameIconsList>("PlayerIcons")?.DefaultIcons;
+        StoreConfig = dataProvider.Get<StoreConfig>("StoreItems")?.Items;
 
-        if(InitialSkins == null)
+        if (InitialSkins == null)
         {
             InitialSkins = new List<int>() { 0, 1 };
         }

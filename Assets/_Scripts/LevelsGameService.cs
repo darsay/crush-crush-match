@@ -7,7 +7,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class LevelsGameService : IService
 {
-    public int LevelsCount = 3;
+    public int LevelsCount = 7;
 
     public Level LevelToPlay;
 

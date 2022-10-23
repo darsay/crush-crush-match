@@ -17,7 +17,7 @@ public class BasicHeart : Blocker
         GraphicId = 0;
     }
 
-    protected void CheckIfNeighbourBroken(Vector2Int cellBroken, ABoardElement[,] board)
+    public virtual void CheckIfNeighbourBroken(Vector2Int cellBroken, ABoardElement[,] board)
     {    
         foreach (var n in Neighbours)
         {

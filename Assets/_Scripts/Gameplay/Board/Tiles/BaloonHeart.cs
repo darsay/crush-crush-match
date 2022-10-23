@@ -20,4 +20,9 @@ public class BaloonHeart : BasicHeart
 
         BoardEventManager.OnTileMatched -= CheckIfNeighbourBroken;
     }
+
+    public override string ToString()
+    {
+        return "Baloon";
+    }
 }

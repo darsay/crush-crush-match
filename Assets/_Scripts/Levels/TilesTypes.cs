@@ -13,5 +13,10 @@ public enum TilesTypes
     Heart,
     BaloonHeart,
     Empty,
+    RedHeart,
+    GreenHeart,
+    BlueHeart,
+    YellowHeart,
+    PurpleHeart,
     
 }

@@ -13,20 +13,24 @@ public class BuySkinButton : BuyButton
 
     private void Start()
     {
+        var _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems[Id];
+
+        if (!_buttonStatus)
+        {
+            priceTag.text = "Sold";
+            return;
+        }
+
         if (!isIAP) return;
+
 
         if (!_iapService.IsReady())
         {
             _button.interactable = false;
 
-            var _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems[Id];
-
-            if (_buttonStatus)
-            {
-                StartCoroutine(WaitForIAPReady());
-            }
-
+            StartCoroutine(WaitForIAPReady());
             priceTag.text = "Loading";
+
         }
         else
         {

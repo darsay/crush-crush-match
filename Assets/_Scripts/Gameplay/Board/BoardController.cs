@@ -171,7 +171,7 @@ public class BoardController
     {
         int typeId = (int)type;
 
-        if(type == TilesTypes.Rand)
+        if (type == TilesTypes.Rand)
         {
             return GenerateRandomEmoji(x, y);
         }
@@ -198,8 +198,23 @@ public class BoardController
             case TilesTypes.BaloonHeart:
                 return new BaloonHeart(new Vector2Int(x, y));
 
+            case TilesTypes.RedHeart:
+                return new RedHeart(new Vector2Int(x, y));
+
+            case TilesTypes.YellowHeart:
+                return new YellowHeart(new Vector2Int(x, y));
+
+            case TilesTypes.GreenHeart:
+                return new GreenHeart(new Vector2Int(x, y));
+
+            case TilesTypes.PurpleHeart:
+                return new PurpleHeart(new Vector2Int(x, y));
+
+            case TilesTypes.BlueHeart:
+                return new BlueHeart(new Vector2Int(x, y));
+
             case TilesTypes.Empty:
-                return new EmptyTile(new Vector2Int(x, y));             
+                return new EmptyTile(new Vector2Int(x, y));
         }
 
         return null;

@@ -15,11 +15,11 @@ MonoBehaviour:
   LevelId: 0
   MovesLimit: 20
   Objectives:
-  - Type: 3
-    Goal: 15
-  - Type: 4
-    Goal: 15
   - Type: 0
+    Goal: 15
+  - Type: 1
+    Goal: 15
+  - Type: 2
     Goal: 15
   EmojiColorsToSpawn: 0000000001000000040000000300000002000000
   IsBoardPreDefined: 1

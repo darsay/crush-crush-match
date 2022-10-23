@@ -8,7 +8,12 @@ public enum ObjectiveType
     Yellow,
     Purple,
     Heart,
-    HeartBaloon
+    HeartBaloon,
+    RedBaloon,
+    GreenBaloon,
+    BlueBaloon,
+    YellowBaloon,
+    PurpleBaloon,
 }
 
 

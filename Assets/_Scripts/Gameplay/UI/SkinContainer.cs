@@ -25,10 +25,10 @@ public class SkinContainer : MonoBehaviour
 
     private void Start()
     {
-        DrawAll(-1);
+        DrawAll();
     }
     
-    void DrawAll(int newIcon)
+    void DrawAll()
     {
         icons = ServiceLocator.GetService<GameProgressionService>().GameData.IconsList;
     

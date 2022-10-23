@@ -62,13 +62,13 @@ public class RemoteConfigGameService : IService
 
     public T Get<T>(string key, T defaultValue = default)
     {
-        string data = _config?.GetString(key, "{}");
+        string data = _config?.GetJson(key, "{}");
         if (string.IsNullOrEmpty(data))
             return defaultValue;
 
         try
         {
-            return JsonUtility.FromJson<Wrapper<T>>(data).data;
+            return JsonUtility.FromJson<T>(data);
         }
         catch (Exception e)
         {
