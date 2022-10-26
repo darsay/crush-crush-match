@@ -12,98 +12,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a3e29a96-357c-4792-aa70-2dc490a61fb7\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8a632e60-f840-4ba4-af4c-57400ef68df5\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialTokens\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 125\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"50185613-dd94-45b1-a881-c08797c123fe\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"4047229e-77b6-4d8f-8cfc-1d310e1d5b11\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"TokensPerWin\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 150\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"f5b7265a-c1be-40ae-b5cf-97367f14aab4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"a79f4cec-d46d-4fc1-8d93-cdbe4144063d\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"TokensToRetry\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"26b66768-944f-4446-9db6-1d6021287cfd\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2d192d41-1aa4-44e9-8431-9879864dce3e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerIcons\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"DefaultIcons\": [\r\n         
     0,\r\n          1\r\n        ]\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"5ed14676-2b29-4311-ae56-d96bea4d8eee\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"3f20a754-c1b9-4888-bb6c-ffa1b029063c\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"DefaultPlayerIcon\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b5b93e95-d699-45ed-a985-e06f1f97c43f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"5a912a0a-6c58-49dc-8f4e-00557d66813c\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"DefaultCrushIcon\",\r\n      \"type\": \"int\",\r\n      \"value\":
-    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e62201a6-00e4-446a-829e-ccc6755a94f1\"\r\n   
+    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"15fd1414-e2f4-4f0f-abd2-d1560ea612b0\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialShuffle\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"5d1884f6-2c81-4c1f-9cb1-d760ad775941\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"ed08b4f9-36d6-4272-aa5e-4f8281bca896\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"PlayerInitialCellEraser\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"2b7dae90-f984-47d4-ad31-2fe0fb8e569c\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"db7b5a91-dbed-464e-a717-e9ba40834702\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"PlayerInitialRowEraser\",\r\n      \"type\": \"int\",\r\n      \"value\":
-    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"baaf51a1-4174-4944-b878-2076fc539007\"\r\n   
+    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2c921ece-9772-4d31-bb69-b50fe47d8d36\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialColumnEraser\",\r\n     
     \"type\": \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"ffa697a7-cf1d-4416-9c71-6012753687b0\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"05013dbe-8dc6-48a7-be42-37d4bb94ce26\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"StoreItems\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"Items\": [\r\n         
-    {\r\n            \"id\": 0,\r\n            \"RewardAmount\": 5,\r\n           
-    \"Price\": 20,\r\n            \"Items\": [\r\n              \"CellEraser\"\r\n           
-    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    },\r\n          {\r\n            \"id\": 1,\r\n            \"RewardAmount\":
-    5,\r\n            \"Price\": 30,\r\n            \"Items\": [\r\n             
-    \"ColumnEraser\"\r\n            ],\r\n            \"IsIAP\": false,\r\n           
-    \"ContentType:\": \"Boosters\"\r\n          },\r\n          {\r\n           
-    \"id\": 2,\r\n            \"RewardAmount\": 5,\r\n            \"Price\": 50,\r\n           
-    \"Items\": [\r\n              \"ColumnEraser\",\r\n              \"CellEraser\"\r\n           
-    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    },\r\n          {\r\n            \"id\": 3,\r\n            \"RewardAmount\":
-    5,\r\n            \"Price\": 30,\r\n            \"Items\": [\r\n             
-    \"Shuffle\",\r\n              \"RowEraser\"\r\n            ],\r\n           
-    \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    }\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a3e29a96-357c-4792-aa70-2dc490a61fb7\"\r\n   
+    {\r\n            \"id\": 0,\r\n            \"Name\": \"boostersPack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 30,\r\n            \"Items\":
+    [\r\n              \"Shuffle\",\r\n              \"RowEraser\"\r\n           
+    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType\": \"Boosters\"\r\n         
+    },\r\n          {\r\n            \"id\": 1,\r\n            \"Name\": \"boostersPack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 30,\r\n            \"Items\":
+    [\r\n              \"ColumnEraser\"\r\n            ],\r\n            \"IsIAP\":
+    false,\r\n            \"ContentType\": \"Boosters\"\r\n          },\r\n         
+    {\r\n            \"id\": 2,\r\n            \"Name\": \"skinspack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 0.99,\r\n            \"Items\":
+    [\r\n              \"icon02\",\r\n              \"icon03\"\r\n            ],\r\n           
+    \"IsIAP\": true,\r\n            \"ContentType\": \"Skins\"\r\n          },\r\n         
+    {\r\n            \"id\": 3,\r\n            \"Name\": \"skinspack02\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 0.99,\r\n            \"Items\":
+    [\r\n              \"icon04\",\r\n              \"icon05\",\r\n             
+    \"icon06\",\r\n              \"icon07\"\r\n            ],\r\n            \"IsIAP\":
+    true,\r\n            \"ContentType\": \"Skins\"\r\n          }\r\n        ]\r\n     
+    }\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8a632e60-f840-4ba4-af4c-57400ef68df5\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialTokens\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 125\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"50185613-dd94-45b1-a881-c08797c123fe\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"4047229e-77b6-4d8f-8cfc-1d310e1d5b11\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"TokensPerWin\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 150\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"f5b7265a-c1be-40ae-b5cf-97367f14aab4\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"a79f4cec-d46d-4fc1-8d93-cdbe4144063d\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"TokensToRetry\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"26b66768-944f-4446-9db6-1d6021287cfd\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2d192d41-1aa4-44e9-8431-9879864dce3e\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerIcons\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"DefaultIcons\": [\r\n         
     0,\r\n          1\r\n        ]\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"5ed14676-2b29-4311-ae56-d96bea4d8eee\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"3f20a754-c1b9-4888-bb6c-ffa1b029063c\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"DefaultPlayerIcon\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b5b93e95-d699-45ed-a985-e06f1f97c43f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"5a912a0a-6c58-49dc-8f4e-00557d66813c\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"DefaultCrushIcon\",\r\n      \"type\": \"int\",\r\n      \"value\":
-    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e62201a6-00e4-446a-829e-ccc6755a94f1\"\r\n   
+    1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"15fd1414-e2f4-4f0f-abd2-d1560ea612b0\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialShuffle\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"5d1884f6-2c81-4c1f-9cb1-d760ad775941\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"ed08b4f9-36d6-4272-aa5e-4f8281bca896\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"PlayerInitialCellEraser\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"2b7dae90-f984-47d4-ad31-2fe0fb8e569c\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"db7b5a91-dbed-464e-a717-e9ba40834702\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"PlayerInitialRowEraser\",\r\n      \"type\": \"int\",\r\n      \"value\":
-    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"baaf51a1-4174-4944-b878-2076fc539007\"\r\n   
+    5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2c921ece-9772-4d31-bb69-b50fe47d8d36\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"PlayerInitialColumnEraser\",\r\n     
     \"type\": \"int\",\r\n      \"value\": 5\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"ffa697a7-cf1d-4416-9c71-6012753687b0\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"05013dbe-8dc6-48a7-be42-37d4bb94ce26\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"StoreItems\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"Items\": [\r\n         
-    {\r\n            \"id\": 0,\r\n            \"RewardAmount\": 5,\r\n           
-    \"Price\": 20,\r\n            \"Items\": [\r\n              \"CellEraser\"\r\n           
-    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    },\r\n          {\r\n            \"id\": 1,\r\n            \"RewardAmount\":
-    5,\r\n            \"Price\": 30,\r\n            \"Items\": [\r\n             
-    \"ColumnEraser\"\r\n            ],\r\n            \"IsIAP\": false,\r\n           
-    \"ContentType:\": \"Boosters\"\r\n          },\r\n          {\r\n           
-    \"id\": 2,\r\n            \"RewardAmount\": 5,\r\n            \"Price\": 50,\r\n           
-    \"Items\": [\r\n              \"ColumnEraser\",\r\n              \"CellEraser\"\r\n           
-    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    },\r\n          {\r\n            \"id\": 3,\r\n            \"RewardAmount\":
-    5,\r\n            \"Price\": 30,\r\n            \"Items\": [\r\n             
-    \"Shuffle\",\r\n              \"RowEraser\"\r\n            ],\r\n           
-    \"IsIAP\": false,\r\n            \"ContentType:\": \"Boosters\"\r\n         
-    }\r\n        ]\r\n      }\r\n    }\r\n  }\r\n]"
+    {\r\n            \"id\": 0,\r\n            \"Name\": \"boostersPack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 30,\r\n            \"Items\":
+    [\r\n              \"Shuffle\",\r\n              \"RowEraser\"\r\n           
+    ],\r\n            \"IsIAP\": false,\r\n            \"ContentType\": \"Boosters\"\r\n         
+    },\r\n          {\r\n            \"id\": 1,\r\n            \"Name\": \"boostersPack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 30,\r\n            \"Items\":
+    [\r\n              \"ColumnEraser\"\r\n            ],\r\n            \"IsIAP\":
+    false,\r\n            \"ContentType\": \"Boosters\"\r\n          },\r\n         
+    {\r\n            \"id\": 2,\r\n            \"Name\": \"skinspack\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 0.99,\r\n            \"Items\":
+    [\r\n              \"icon02\",\r\n              \"icon03\"\r\n            ],\r\n           
+    \"IsIAP\": true,\r\n            \"ContentType\": \"Skins\"\r\n          },\r\n         
+    {\r\n            \"id\": 3,\r\n            \"Name\": \"skinspack02\",\r\n           
+    \"RewardAmount\": 5,\r\n            \"Price\": 0.99,\r\n            \"Items\":
+    [\r\n              \"icon04\",\r\n              \"icon05\",\r\n             
+    \"icon06\",\r\n              \"icon07\"\r\n            ],\r\n            \"IsIAP\":
+    true,\r\n            \"ContentType\": \"Skins\"\r\n          }\r\n        ]\r\n     
+    }\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"17133241-8ce0-4f16-8ef2-840437fc4d1f\",\r\n   
     \"name\": \"development\",\r\n    \"id\": \"182fe892-920c-4168-b664-e3f070aaa8f1\",\r\n   
     \"isDefault\": false,\r\n    \"createdAt\": \"2022-09-07T17:52:10Z\",\r\n   

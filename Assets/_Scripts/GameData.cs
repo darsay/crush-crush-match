@@ -29,7 +29,7 @@ public class GameData
 
     public List<int> IconsList = new List<int>();
 
-    public List<bool> ShopItems = new List<bool>();
+    public List<int> ShopItems = new List<int>();
 
     public void SetStatsToListen()
     {
@@ -73,6 +73,6 @@ public class GameData
 
     void OnBuyMade(int id)
     {
-        ShopItems[id] = false;
+        ShopItems.Add(id);
     }
 }

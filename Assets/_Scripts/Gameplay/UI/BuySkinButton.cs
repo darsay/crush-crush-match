@@ -13,10 +13,11 @@ public class BuySkinButton : BuyButton
 
     private void Start()
     {
-        var _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems[Id];
+        var _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems.Contains(Id);
 
         if (!_buttonStatus)
         {
+            _button.enabled = false;
             priceTag.text = "Sold";
             return;
         }
@@ -74,6 +75,8 @@ public class BuySkinButton : BuyButton
 
 
                 GameDataEventManager.NotifyOnBuyMade(Id);
+
+                _button.enabled = false;
             }
             else
             {

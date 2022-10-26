@@ -74,7 +74,7 @@ public class GameProgressionService : IService
         GameData.PlayerIcon = config.InitialPlayerIcon;
         GameData.CrushIcon = config.InitialCrushIcon;
 
-        GameData.ShopItems = new List<bool>() { true, true, true, true, true };
+        GameData.ShopItems = new List<int>();
         GameData.IconsList = config.InitialSkins;
 
     }

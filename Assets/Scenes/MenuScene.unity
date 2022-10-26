@@ -790,7 +790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3880130}
+  m_AnchoredPosition: {x: 0, y: -3890042}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332717431
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storeBoostersPrefab: {fileID: 1594776014410104217, guid: cfedc83939f1c0e4b882a63fffb7f139, type: 3}
-  _storeSkinsPrefab: {fileID: 0}
+  _storeSkinsPrefab: {fileID: 8319844041949266749, guid: e4f8f68aed6bfe149af01bdc87fae08a, type: 3}
   _itemsParent: {fileID: 1387458092}
 --- !u!1 &1407389688
 GameObject:

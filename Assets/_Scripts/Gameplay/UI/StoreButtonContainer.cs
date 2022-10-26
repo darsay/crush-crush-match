@@ -21,13 +21,13 @@ public class StoreButtonContainer : MonoBehaviour
 
     private void Start()
     {
-        _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems;
+       // _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems.Contains(Id);
         SetButtons ();
     }
 
     void SetBuy(int id)
     {
-        _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems;
+       // _buttonStatus = ServiceLocator.GetService<GameProgressionService>().GameData.ShopItems;
 
         storeButtons[id].interactable = false;
     }

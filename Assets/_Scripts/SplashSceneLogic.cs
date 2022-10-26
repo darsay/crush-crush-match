@@ -39,7 +39,7 @@ public class SplashSceneLogic : MonoBehaviour
 
     private async Task LoadServices()
     {
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         Application.targetFrameRate = 60;
 
         string environmentId = IsDevBuild ? "development" : "production";
@@ -77,7 +77,8 @@ public class SplashSceneLogic : MonoBehaviour
         await adsService.Initialize(Application.isEditor);
         await iAPService.Initialize(new Dictionary<string, string>()
         {
-            ["testpurchase"] = "testpurchase"
+            ["skinspack"] = "skinspack",
+            ["skinspack02"] = "skinspack02"
         });
 
         gameConfig.Initialize(remoteConfig);
